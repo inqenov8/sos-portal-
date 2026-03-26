@@ -1,0 +1,49 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# SOS Portal — .gitignore
+# ─────────────────────────────────────────────────────────────────────────────
+
+# SECURITY — NEVER commit these
+.env
+backend/.env
+*.key
+*.pem
+*.crt
+
+# Node.js dependencies
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+# Build output
+frontend/dist/
+frontend/build/
+
+# Logs
+*.log
+logs/
+
+# PM2
+.pm2/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Backups
+*.sql.gz
+backups/
+
+# Uploads (user evidence files — store externally in production)
+uploads/*
+!uploads/.gitkeep
+
+# Test coverage
+coverage/
